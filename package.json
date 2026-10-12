@@ -1,0 +1,36 @@
+{
+  "name": "bookmydiagno",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "create-admin": "tsx scripts/create-admin.ts",
+    "seed:demo-tests": "tsx scripts/seed-demo-tests.ts",
+    "acceptance": "node scripts/acceptance.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
+    "mongoose": "^9.11.1",
+    "next": "16.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "mongodb-memory-server": "^11.3.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
